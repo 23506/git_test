@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opdracht_7C | Arrays</title>
+</head>
+<body>
+
+	<h2>1 Array van getallen</h2>
+
+	<p id="getallen"></p>
+
+	<script>
+
+		var getallen, text, gLen, i;
+
+		getallen = [1, 4, 6, 2, 5, 8];
+		gLen = getallen.length;
+		text = "<ul>";
+		for (i = 0; i < gLen; i++) {
+		    text += "<li>" + getallen[i] + "</li>";
+		}
+		text += "</ul>";
+
+		console.log(getallen);
+		document.getElementById("getallen").innerHTML = text;
+
+	</script>
+
+	<h2>2 Array van seizoenen</h2>
+
+	<p id="seizoenen"></p>
+
+	<script>
+
+		var seizoenen, text, sLen, i;
+
+		seizoenen = ["Winter", "Lente", "Zomer", "Herfst"];
+		sLen = seizoenen.length;
+		text = "<ul>";
+		for (i = 0; i < sLen; i++) {
+		    text += "<li>" + seizoenen[i] + "</li>";
+		}
+		text += "</ul>";
+
+		console.log(seizoenen);
+		document.getElementById("seizoenen").innerHTML = text;
+
+	</script>
+
+	<h2>3 Array van getallen en strings</h2>
+
+	<p id="strings"></p>
+
+	<script>
+
+		var strings, text, gsLen, i;
+
+		strings = ["Maart", 5, "Juli", 2, "Mei", 8, "September"];
+		gsLen = strings.length;
+		text = "<ul>";
+		for (i = 0; i < gsLen; i++) {
+		    text += "<li>" + strings[i] + "</li>";
+		}
+		text += "</ul>";
+
+		console.log(strings);
+		document.getElementById("strings").innerHTML = text;
+
+	</script>
+
+	<h2>4 Voeg elementen toe</h2>
+
+	<p id="elementen"></p>
+
+	<script>
+
+		var elementen, text, eLen, i;
+
+		elementen = ["Maart", 5, "Juli", 2, "Mei", 8, "September"];
+
+		elementen.push(9, "Augustus", 7);
+
+		eLen = elementen.length;
+		text = "<ul>";
+		for (i = 0; i < eLen; i++) {
+		    text += "<li>" + elementen[i] + "</li>";
+		}
+		text += "</ul>";
+
+		console.log(elementen);
+		document.getElementById("elementen").innerHTML = text;
+
+	</script>	
+
+	<h2>5 Verander elementen</h2>
+
+	<p id="verander"></p>
+
+	<script>
+
+		var verander, text, vLen, i;
+
+		verander = ["Maart", 5, "Juli", 2, "Mei", 8, "September"];
+
+		verander[0] = "Theelepel";
+		verander[1] = "Doos";
+		verander[2] = "Appelsap";
+
+		vLen = verander.length;
+		text = "<ul>";
+		for (i = 0; i < vLen; i++) {
+		    text += "<li>" + verander[i] + "</li>";
+		}
+		text += "</ul>";
+
+		console.log(verander);
+		document.getElementById("verander").innerHTML = text;
+
+	</script>
+
+</body>
+</html>
